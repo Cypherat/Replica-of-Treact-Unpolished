@@ -1413,19 +1413,19 @@ dl {
 .prefooter__textblock {
   position: relative;
   z-index: 10;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
+  margin: 0 auto; /* Center the text block horizontally */
   max-width: 1024px;
+  padding: 0 2rem; /* Adjust padding for content spacing */
+  display: flex;
   align-items: center;
-  padding-left: 2rem;
-  padding-right: 2rem;
 }
 
 .prefooter__text {
   max-width: 32rem;
-  font-size: 30px;
+  font-size: 24px; /* Adjust font size for readability */
+  margin: 0 auto; /* Center the text horizontally within the block */
 }
+
 
 .prefooter__header {
   font-weight: 700;
@@ -1436,17 +1436,25 @@ dl {
   display: flex;
 }
 
-.prefooter__button1, .prefooter__button2 {
+.prefooter__button1,
+.prefooter__button2 {
   background-color: rgb(245, 101, 101);
   color: rgb(247, 250, 252);
-  border-radius: 9999px;
-  border-width: 1px;
-  border-color: transparent;
+  border-radius: 8px;
+  border: none; 
   font-weight: 700;
   letter-spacing: 0.025rem;
-  margin: 50px;
-  padding: 1.4rem;
+  margin: 10px;
+  padding: 12px 24px; 
+  cursor: pointer; 
 }
+
+/* hover effect */
+.prefooter__button1:hover,
+.prefooter__button2:hover {
+  background-color: rgb(220, 90, 90);
+}
+
 
 /* FOOTER */
 
